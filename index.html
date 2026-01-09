@@ -133,6 +133,28 @@
         </ul>
     </section>
 </div>
+<footer>
+    <!-- Other footer content -->
+    
+    <div id="visitor-counter">Cargando visitas...</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // API Endpoint for the Visitor Counter
+        const counterEndpoint = "https://z9qvlrg4dg.execute-api.us-east-1.amazonaws.com/count";
+        const counterElement = document.getElementById("visitor-counter");
+        if (counterElement) {
+            fetch(counterEndpoint)
+                .then(response => response.json())
+                .then(data => {
+                    counterElement.innerText = `Visitas: ${data.count}`;
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+        }
+    });
+</script>
 
 </body>
 </html>
