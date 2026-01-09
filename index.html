@@ -3,10 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>CV - Desarrollador Web & Cloud</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+            padding-bottom: 5px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .badge {
+            background: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <p>Este es un párrafo de ejemplo.</p>
+
+<header>
+    <h1>Tu Nombre Completo</h1>
+    <p>Full Stack Developer | Cloud Solutions Architect</p>
+    <p>📧 email@ejemplo.com | 📱 +34 600 000 000 | 📍 Madrid, España</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Resumen Profesional</h2>
+        <p>Desarrollador enfocado en soluciones escalables y arquitectura en la nube. Experto en optimizar procesos de despliegue y crear aplicaciones web robustas con tecnologías modernas.</p>
+    </section>
+
+    <section>
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div>
+                <h3>Frontend & Backend</h3>
+                <span class="badge">JavaScript (ES6+)</span>
+                <span class="badge">React / Next.js</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Python (FastAPI)</span>
+            </div>
+            <div>
+                <h3>Cloud & DevOps</h3>
+                <span class="badge">AWS (EC2, S3, Lambda)</span>
+                <span class="badge">Docker / Kubernetes</span>
+                <span class="badge">CI/CD (GitHub Actions)</span>
+                <span class="badge">Terraform</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div class="job">
+            <div class="job-title">Senior Web & Cloud Developer - Tech Solutions</div>
+            <div class="date">Enero 2022 - Actualidad</div>
+            <ul>
+                <li>Migración de arquitectura On-Premise a AWS, reduciendo costes en un 30%.</li>
+                <li>Desarrollo de microservicios con Node.js y despliegue mediante Docker.</li>
+                <li>Optimización de carga frontend mejorando el Core Web Vitals en un 40%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">Full Stack Developer Junior - Startup Innova</div>
+            <div class="date">Junio 2019 - Diciembre 2021</div>
+            <ul>
+                <li>Desarrollo de interfaces de usuario interactivas con React.</li>
+                <li>Gestión de bases de datos PostgreSQL y optimización de consultas SQL.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <p><strong>Grado en Ingeniería Informática</strong> - Universidad Politécnica (2015 - 2019)</p>
+    </section>
+
+    <section>
+        <h2>Certificaciones</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Google Professional Cloud Developer</li>
+        </ul>
+    </section>
+</div>
+
 </body>
 </html>
